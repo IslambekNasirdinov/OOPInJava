@@ -3,6 +3,8 @@ import ООП.Seminar.Seminar_1.HomeTask.Duck;
 import ООП.Seminar.Seminar_1.HomeTask.Fish;
 import ООП.Seminar.Seminar_1.HomeTask.Strok;
 
+/* Доброго времени суток я не смог выполнить задание с наследование на с Animals. Пока что я думаю это не возможно для меня.
+* Я вас прошу поделиться с литературами пожалуйста*/
 public class main {
     public static void main(String[] args) {
         Duck duck = new Duck();
