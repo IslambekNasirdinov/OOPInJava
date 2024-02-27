@@ -2,42 +2,28 @@ package ООП.Seminar.Seminar_1.HomeTask;
 
 public class Animal {
     protected String name;
-    protected String owner;
+    protected String type;
 
-    public Animal(java.lang.String name, java.lang.String owner) {
+    public Animal(String name) {
         this.name = name;
-        this.owner = owner;
+        this.type = getClass().getSimpleName();
     }
 
-    public java.lang.String getName() {
-        return name;
+    protected void fly(){
+        System.out.printf("%s %s fly!%n", type, name);
     }
-
-    public java.lang.String getOwner() {
-        return owner;
+    protected void toGo(){
+        System.out.printf("%s %s to go!%n", type, name);
     }
-
-    public void toGo(){
-
-        System.out.println("I can to go!");
+    protected void swim(){
+        System.out.printf("%s %s swim!%n", type, name);
     }
-
-    public void swim(){
-        System.out.println("I can swim");
-    }
-
 
     @java.lang.Override
     public java.lang.String toString() {
-        return "Animal{" +
-                "name=" + name +
-                ", owner=" + owner +
-                '}';
+        return String.format("%s name = %s", type, name);
     }
 }
 
-interface Opportunity{
-    void action();
-}
 
 

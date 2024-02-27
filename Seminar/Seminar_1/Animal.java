@@ -2,12 +2,13 @@ package ООП.Seminar.Seminar_1;
 import java.util.List;
 import java.time.LocalDate;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
     protected LocalDate birthDay;
     protected List<String> vaccinations;
     protected String illness;
     protected String owner;
+    protected String type;
 
     public Animal(java.lang.String name, LocalDate birthDay, List<String> vaccinations, java.lang.String illness, java.lang.String owner) {
         this.name = name;
@@ -15,6 +16,7 @@ public class Animal {
         this.vaccinations = vaccinations;
         this.illness = illness;
         this.owner = owner;
+        this.type = getClass().getSimpleName();
     }
 
     public java.lang.String getName() {
@@ -36,6 +38,8 @@ public class Animal {
     public java.lang.String getOwner() {
         return owner;
     }
+
+
 
     @java.lang.Override
     public java.lang.String toString() {
@@ -64,11 +68,6 @@ public class Animal {
     private void sleep(){
         System.out.println("Animal sleeping");
     }
-    public void lifeCycle(){
-        wakeUp();
-        eat();
-        play();
-        sleep();
-    }
+   // public abstract void lifeCycle();
 
 }

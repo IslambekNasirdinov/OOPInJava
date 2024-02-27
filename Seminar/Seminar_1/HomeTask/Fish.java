@@ -1,22 +1,18 @@
 package ООП.Seminar.Seminar_1.HomeTask;
 
-public class Fish implements Opportunity{
-    @java.lang.Override
-    public void action() {
-        fly();
-        swim();
-        toGo();
-    }
-    public void fly(){
-        System.out.println("I can not fly! Because i am fish");
-    }
-    public void toGo(){
-
-        System.out.println("I can not to go!");
+public class Fish extends Animal{
+    public Fish(String name) {
+        super(name);
     }
 
-    public void swim(){
-        System.out.println("I can swim");
+    @Override
+    protected void fly() {
+        System.out.printf("%s %s can not fly!%n", type, name);
+    }
+
+    @Override
+    protected void toGo() {
+        System.out.printf("%s %s can not go!%n", type, name);
     }
 }
 

@@ -1,24 +1,18 @@
-import ООП.Seminar.Seminar_1.HomeTask.Animal;
-import ООП.Seminar.Seminar_1.HomeTask.Duck;
-import ООП.Seminar.Seminar_1.HomeTask.Fish;
-import ООП.Seminar.Seminar_1.HomeTask.Strok;
+package ООП.Seminar.Seminar_1.HomeTask;
 
-/* Доброго времени суток я не смог выполнить задание с наследование на с Animals. Пока что я думаю это не возможно для меня.
-* Я вас прошу поделиться с литературами пожалуйста*/
-public class main {
+public class Main {
     public static void main(String[] args) {
-        Duck duck = new Duck();
-        duck.action();
-
-        Strok stork = new Strok();
-        stork.action();
-
-        Fish fish = new Fish();
-        fish.action();
+        Duck duck = new Duck("Donald");
+        Strok strok = new Strok("Stiv");
+        Fish fish = new Fish("Nemo");
+        duck.fly();
+        fish.fly();
+        strok.fly();
+        fish.toGo();
+        fish.swim();
 
     }
-
-     /*
+    /*
     1) Добавить в класс Animal методы двигаться(toGo), летать(fly), плавать(swim).
 2) Создать по два класса
 наследника Animal, умеющих летать, плавать, бегать(животное может как уметь что-то одно, так и все сразу).
@@ -27,5 +21,8 @@ public class main {
 какие проблемы в таком проектировании Вы увидели,
 а также там же написать возникшие при выполнении дз вопросы
 (если они есть)
+
+Формат сдачи:
+Ссылка на гитхаб
      */
 }
